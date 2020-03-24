@@ -15,6 +15,11 @@ Sous-réseau 6 : 37 machines | 172.16.1.65/26 | 172.16.1.102/26 | 172.16.1.127/2
 Sous-réseau 7 : 25 machines | 172.16.1.129/27 | 172.16.1.154/27 | 172.16.1.159/27
 
 ## Exercice 2 : Préparation de l'environnement
+On utlise le tableau proposé dans le sujet du TP pour configurer _serveur_ et _client_.<br>
+_Serveur_ devant avoir une connexion internet et servire de passerelle, on lui attribut deux adapter : un mode NAT (VM > Hôte) et un mode réseau interne (VM1 <> VM2).<br>
+_Client_ devant avoir un accès internet uniquement via le serveur, on lui attribut un seul adapteur : un mode réseau interne (VM1 <> VM2).<br>
+On vérifie sur chacune des deux VM avec `ip -4 a`.<br>
+
 
 ## Exercice 3 : Installation du serveur DHCP
 
